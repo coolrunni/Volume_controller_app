@@ -34,7 +34,7 @@ desc_user.grid(row=1,column=1)
 def show():
     msg=messagebox.askyesno("Security Alert!","Are you sure to open your camera")
     if msg == True:
-        cap = cv2.VideoCapture(1)
+        cap = cv2.VideoCapture(0)
         cap.set(3, wCam)
         cap.set(4, hCam)
         ptime=0
